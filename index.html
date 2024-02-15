@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div class="header">
+
+            <h3 heading>DevDetective</h3>
+
+            <div class="bg_color" background_color>
+
+                <div class="mode_type" mode_to_select></div>
+                
+                <img class="mode_img" mode_to_selecticon ></img>
+
+            </div>
+        </div>
+
+
+        <form class="search_tab" >
+
+            <img src="./assets/images/search-icon.svg" class="search">
+            <input type="text" placeholder="Enter a GitHub UserName..." class="input_tab">
+
+            <button type="submit" class="btn">
+                search
+            </button>
+        </form>
+
+        <div class="container ">
+
+            <div class="image">
+                <img class="dev_image">
+            </div>
+
+            <div class="details">
+
+                <div class="name_date">
+
+                    <p class="name" user_name></p>
+
+                    <p class="date_join" ></p>
+                </div>
+
+                <a class="git_link"></a>
+
+                <p class="bio_data"></p>
+
+                <div class="fame">
+                    <div class="flex_para">
+                        <p>Repos</p>
+                        <div class="repo"></div>
+                    </div>
+
+                    <div class="flex_para">
+                        <p>Followers</p>
+                        <div class="follower"></div>
+                    </div>
+
+                    <div class="flex_para">
+                        <p>Followings</p>
+                        <div class="following"></div>
+                    </div>
+                    
+                </div>
+
+                <div class="social_info">
+                    <div class="parameter_container">
+                        <img src="./assets/images/location-icon.svg" class="location">
+
+                        <p class="city_name"></p>
+                    </div>
+
+                    <div class="parameter_container">
+
+                        <img src="./assets/images/twitter-icon.svg" class="twitter_icon">
+                        <a class="twitter_link"></a>
+                    </div>
+
+                    <div class="parameter_container">
+
+                        <img src="./assets/images/company-icon.svg" class="linkedIn_icon">
+                        <a class="linkedIn_link"></a>
+                    </div>
+
+                    <div class="parameter_container">
+
+                        <img src="./assets/images/website-icon.svg" class="blog_icon">
+                        <a class="blog_link"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+</body>
+</html>

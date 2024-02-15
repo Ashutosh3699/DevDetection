@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper{
+
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: rgb(24, 24, 24);
+    background-color: #F6F8FF;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+#wrapper.Dark_mode{
+
+    color: #FFFFFF;
+    background-color: #141D2F;
+}
+
+.header{
+
+    width: 90%;
+    max-width: 720px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h3{
+
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgb(68, 84, 119);
+}
+.header h3.Dark_mode{
+
+    color: aliceblue;
+}
+
+.header .bg_color{
+
+    display: flex;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    color: rgb(68, 84, 119);
+    font-weight: 600;
+    gap: 0 1.75rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header .bg_color.Dark_mode{
+
+    color: aliceblue;
+}
+
+.mode_type{
+
+    letter-spacing: 3px;
+}
+
+
+/* search bar */
+.search_tab{
+
+    position: relative;
+    width: 90%;
+    max-width: 720px;
+    padding: 0.5rem 1.5rem;
+    padding-right: 0.75rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    background-color: #FEFEFE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgb(166, 201, 255);
+
+}
+
+.search_tab.Dark_mode{
+
+    color: #F6F8FF;
+    background-color: #1E2A47;
+    box-shadow: 0px 2px 10px rgb(73, 146, 255);
+}
+
+.input_tab{
+    all: unset;
+    position: relative;
+    left: -120px;
+    width: auto;
+    height: 2rem;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.25rem;
+}
+
+.input_tab::placeholder{
+    color: #1f3d84;
+}
+
+.input_tab.Dark_mode::placeholder{
+
+    color: #ffffff;
+}
+
+
+.btn{
+
+    all: unset;
+    padding: 0.7rem 1.35rem ;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: #007efd;
+    cursor: pointer;
+    color: #FEFEFE;
+    transition: background-color 500ms;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.btn:hover{
+
+    background-color: #5d93ff;
+}
+
+.search{
+    width: 1.5rem;
+}
+
+.container{
+
+    width: 90%;
+    max-width: 720px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    padding: 0.5rem 2rem;
+    padding-top: 2.5rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    background-color: #FEFEFE;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 0 2.5rem;
+    box-shadow: 0px 2px 10px rgb(166, 201, 255);
+}
+
+.container.Dark_mode{
+
+    color: #f6f6f6;
+    background-color: #1E2A47;
+    box-shadow: 0px 2px 10px rgb(73, 146, 255);
+}
+
+.container .image{
+
+    width: 30%;
+    height: 45%;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.dev_image{
+
+    width: 100%;
+    height: 140%;
+    object-fit: cover;
+}
+
+.details{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0rem;
+    justify-content: space-between;
+}
+
+.name_date{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name[user_name]{
+
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.date_join{
+
+    font-size: 1rem;
+    font-family: "Tektur", sans-serif;
+    color: #5587fa9a;
+
+}
+
+.git_link{
+
+    color: #007efd;
+    font-size: 1rem;
+    font-family:"Tektur", sans-serif;
+}
+
+.bio_data{
+
+    font-size: 1rem;
+    font-weight: 500;
+    font-weight: "Roboto Condensed", sans-serif;
+    color: #47576c;
+}
+
+.bio_data.Dark_mode{
+    color: #9ab8ff;
+}
+
+.fame{
+
+    width: 95%;
+    padding: 1.5rem 4rem;
+    background-color: #F6F8FF;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fame.Dark_mode{
+
+    background-color: #141D2F;
+}
+
+.flex_para{
+
+    font-size: 1rem;
+    font-weight: 600;
+    font-family:"Tektur", sans-serif;
+    color: #6b809b;
+}
+
+.flex_para.Dark_mode{
+    color: #c0c0c0;
+}
+
+.flex_para div{
+
+    font-size: 2rem;
+    color: #222222;
+}
+.flex_para.Dark_mode div{
+
+    color: #ffffff;
+}
+
+.social_info{
+
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.75rem 3rem;
+}
+.parameter_container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1rem;
+}
+
+@media (max-width: 800px) {
+    
+    .header h3{
+
+        font-size: 2rem;
+    }
+
+    .search{
+        width: 0.75rem;
+    }
+    .input_tab{
+
+        height: 0.75rem;
+        left: -1.2rem;
+        font-size: 0.75rem;
+    }
+    .btn{
+
+        padding:0.3rem 0.75rem ;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    .container{
+
+        flex-direction: column;
+        align-items: center;
+    }
+    .details{
+        width: 95%;
+        overflow: hidden;
+        margin-top: 1rem;
+    }
+    .name_date{
+        align-items: baseline;
+        gap: 0 1rem;
+    }
+    .name[user_name]{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .date_join{
+
+        font-size: 0.75rem;
+    }
+
+    .fame{
+
+        width: 100%;
+        padding: 0.75rem 0.75rem;
+        border-radius: 7px;
+    }
+}
+
+@media (max-width: 320px) {
+    
+    .header h3{
+
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
